@@ -19,5 +19,8 @@
   "homepage": "https://github.com/marchesido/-trilhasTechForge-4#readme",
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
