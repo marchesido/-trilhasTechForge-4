@@ -31,5 +31,9 @@ class ContaBancaria {
 }
 
 const conta = new ContaBancaria("Douglas", 100);
-conta.depositar(50);
+conta.depositar(150);
 conta.sacar(30);
+
+const conta2 = new ContaBancaria("Evelyn", 200);
+conta.depositar(250);
+conta.sacar(60);

@@ -12,7 +12,15 @@ var Livro = /** @class */ (function () {
     };
     return Livro;
 }());
-// Exemplo de uso:
-var livro = new Livro("Dom Casmurro", "Machado de Assis", 256);
+var livro = new Livro("1984", "George orwell", 336);
 livro.marcarComoLido();
 console.log(livro);
+var livro2 = new Livro("Casa Velha", "Machado de Assis", 152);
+livro2.marcarComoLido();
+console.log(livro2);
+var livro3 = new Livro("A revolução dos bichos", "George orwell", 120);
+livro3.marcarComoLido();
+console.log(livro3);
+var livro4 = new Livro("Dom Casmurro", "Machado de Assis", 256);
+livro4.marcarComoLido();
+console.log(livro4);

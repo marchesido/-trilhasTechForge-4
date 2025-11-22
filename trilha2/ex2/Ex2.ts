@@ -17,10 +17,18 @@ class Livro {
     }
 }
 
-const livro = new Livro("Dom Casmurro", "Machado de Assis", 256);
+const livro = new Livro("1984", "George orwell", 336);
 livro.marcarComoLido();
 console.log(livro);
 
 const livro2 = new Livro("Casa Velha", "Machado de Assis", 	152);
 livro2.marcarComoLido();
 console.log(livro2);
+
+const livro3 = new Livro("A revolução dos bichos", "George orwell", 	120);
+livro3.marcarComoLido();
+console.log(livro3);
+
+const livro4 = new Livro("Dom Casmurro", "Machado de Assis", 256);
+livro4.marcarComoLido();
+console.log(livro4);
