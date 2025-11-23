@@ -33,3 +33,21 @@ class Passaro extends Animal {
         this.comer(10);             // apenas aumenta energia
     }
 }
+
+function rotina(animal: Animal): void {             // Função polimórfica
+    console.log("Executando rotina do animal...");
+
+    if (animal instanceof Leao) {
+        (animal as Leao).caçar();
+    } else if (animal instanceof Passaro) {
+        (animal as Passaro).comerFrutas();
+    }
+
+    animal.statusEnergia();
+}
+
+const leao = new Leao(60);              // Teste com polimorfismo
+const passaro = new Passaro(40);
+
+rotina(leao);
+rotina(passaro);
