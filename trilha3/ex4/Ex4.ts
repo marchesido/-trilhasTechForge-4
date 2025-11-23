@@ -18,3 +18,18 @@ class Animal {
         console.log(`Energia atual: ${this.energia}`);
     }
 }
+
+class Leao extends Animal {
+    caçar(): void {
+        console.log("Leão está caçando...");
+        this.gastarEnergia(20);             // gasta energia para caçar
+        this.comer(30);             // recupera energia ao comer a presa
+    }
+}
+
+class Passaro extends Animal {
+    comerFrutas(): void {
+        console.log("Pássaro está comendo frutas...");
+        this.comer(10);             // apenas aumenta energia
+    }
+}
