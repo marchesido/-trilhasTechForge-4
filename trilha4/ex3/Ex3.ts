@@ -35,7 +35,7 @@ console.log(produto1);
 const produto2 = loja.buscarProdutoPorCodigo(99);
 console.log(produto2);
 
-loja.adicionarProduto({ codigo: 4, nome: "Camera Canon R" });
+loja.adicionarProduto({ codigo: 4, nome: "Camera Canon R6" });
 
 const produto3 = loja.buscarProdutoPorCodigo(4);
 console.log(produto3);

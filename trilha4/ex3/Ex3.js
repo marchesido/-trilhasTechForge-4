@@ -23,6 +23,6 @@ var produto1 = loja.buscarProdutoPorCodigo(2); // Buscando produtos
 console.log(produto1);
 var produto2 = loja.buscarProdutoPorCodigo(99);
 console.log(produto2);
-loja.adicionarProduto({ codigo: 4, nome: "Camera Canon R" });
+loja.adicionarProduto({ codigo: 4, nome: "Camera Canon R6" });
 var produto3 = loja.buscarProdutoPorCodigo(4);
 console.log(produto3);
