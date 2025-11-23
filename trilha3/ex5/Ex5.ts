@@ -43,3 +43,11 @@ function calcularSalarioComBonus(funcionarios: Funcionario[]): void {           
     });
 }
 
+const funcionarios: Funcionario[] = [   // Testando
+    new Gerente("Alice", 5000),
+    new Operario("Bruno", 2000),
+    new Operario("Carla", 3500),
+    new Gerente("Daniel", 30000)
+];
+
+calcularSalarioComBonus(funcionarios);
