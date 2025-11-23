@@ -40,13 +40,13 @@ class Payment {
 
     if (amount < requiredAmount) {
       this.status = 'failed';
-      console.log(`❌ Payment failed: insufficient amount`);
+      console.log(` Payment failed: insufficient amount`);
       return false;
     }
 
-    console.log(`💳 Processing payment of $${amount.toFixed(2)} via ${paymentMethod}...`);
+    console.log(` Processing payment of $${amount.toFixed(2)} via ${paymentMethod}...`);
     this.status = 'paid';
-    console.log(`✅ Payment successful!`);
+    console.log(` Payment successful!`);
     return true;
   }
 
@@ -68,9 +68,9 @@ class Shipping {
     
     if (newStatus === 'shipped') {
       this.trackingNumber = this.generateTrackingNumber();
-      console.log(`📦 Order shipped! Tracking: ${this.trackingNumber}`);
+      console.log(` Order shipped! Tracking: ${this.trackingNumber}`);
     } else if (newStatus === 'delivered') {
-      console.log(`✅ Order delivered!`);
+      console.log(` Order delivered!`);
     }
   }
 
@@ -128,7 +128,7 @@ class Order {
     const total = this.cart.calculateTotal();
     
     return `
-📋 Order ${this.orderId}
+ Order ${this.orderId}
 ━━━━━━━━━━━━━━━━━━━━━━
 Items (${items.length}):
 ${items.map(item => `  • ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`).join('\n')}
