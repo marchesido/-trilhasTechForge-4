@@ -13,39 +13,39 @@ var Biblioteca = /** @class */ (function () {
     };
     return Biblioteca;
 }());
-var biblioteca = new Biblioteca();
-biblioteca.adicionarLivro({
+var bibliotecaEx4 = new Biblioteca();
+bibliotecaEx4.adicionarLivro({
     titulo: "Dom Casmurro",
     autor: "Machado de Assis",
     disponivel: true
 });
-biblioteca.adicionarLivro({
+bibliotecaEx4.adicionarLivro({
     titulo: "1984",
     autor: "George Orwell",
     disponivel: false
 });
-biblioteca.adicionarLivro({
+bibliotecaEx4.adicionarLivro({
     titulo: "O Pequeno Príncipe",
     autor: "Antoine de Saint-Exupéry",
     disponivel: true
 });
-biblioteca.adicionarLivro({
+bibliotecaEx4.adicionarLivro({
     titulo: "Harry Potter e a Pedra Filosofal",
     autor: "J.K. Rowling",
     disponivel: false
 });
-biblioteca.adicionarLivro({
+bibliotecaEx4.adicionarLivro({
     titulo: "Cem Anos de Solidão",
     autor: "Gabriel García Márquez",
     disponivel: true
 });
 console.log("=== LIVROS DISPONÍVEIS ==="); // Testando o método buscarLivrosDisponiveis()
-var livrosDisponiveis = biblioteca.buscarLivrosDisponiveis();
+var livrosDisponiveis = bibliotecaEx4.buscarLivrosDisponiveis();
 livrosDisponiveis.forEach(function (livro) {
     console.log("- ".concat(livro.titulo, " (").concat(livro.autor, ")"));
 });
 console.log("\n=== TODOS OS LIVROS ===");
-var todosLivros = biblioteca.obterTodosLivros();
+var todosLivros = bibliotecaEx4.obterTodosLivros();
 todosLivros.forEach(function (livro) {
     var status = livro.disponivel ? "✓ Disponível" : "✗ Emprestado";
     console.log("".concat(status, " - ").concat(livro.titulo, " (").concat(livro.autor, ")"));
